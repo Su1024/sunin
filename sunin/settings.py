@@ -14,7 +14,7 @@ BOT_NAME = 'sunin'
 SPIDER_MODULES = ['sunin.spiders']
 NEWSPIDER_MODULE = 'sunin.spiders'
 
-
+LOG_LEVEL='WARNING'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'sunin (+http://www.yourdomain.com)'
 

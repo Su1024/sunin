@@ -14,8 +14,5 @@ class SuninItem(scrapy.Item):
     # 分类链接
     category_url = scrapy.Field()
     # 书名
-    book_name = scrapy.Field()
-    # 图书链接
-    book_url = scrapy.Field()
-    # 图书价格
-    book_price = scrapy.Field()
+    book_info_list = scrapy.Field()
+
