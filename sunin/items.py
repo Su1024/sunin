@@ -9,6 +9,13 @@ import scrapy
 
 
 class SuninItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    # 图书分类
+    category = scrapy.Field()
+    # 分类链接
+    category_url = scrapy.Field()
+    # 书名
+    book_name = scrapy.Field()
+    # 图书链接
+    book_url = scrapy.Field()
+    # 图书价格
+    book_price = scrapy.Field()
