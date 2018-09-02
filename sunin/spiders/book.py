@@ -47,11 +47,15 @@ class BookSpider(scrapy.Spider):
         book_dict = {}
 
         title = response.xpath('//h1[@id="itemDisplayName"]/text()').extract_first().strip()
-        price = response.xpath('//span[@class="mainprice"]/text()').extract_first()
+        # price = response.xpath('//span[@class="mainprice"]/text()').extract_first()
         book_dict['book_name'] = title
-        book_dict['price'] = price
+        # book_dict['price'] = price
         book_dict['book_url'] = response.url
 
         item.get('book_info_list').append(book_dict)
 
-        print(item)
+        price_url = "https://ds.suning.cn/ds/generalForTile/"
+
+        yield scrapy.Request(
+            
+        )
